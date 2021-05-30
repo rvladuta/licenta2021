@@ -55,7 +55,7 @@ app.get("/values/current", async (req, res) => {
 app.post("/values", async (req, res) => {
   const index = req.body.index;
 
-  if (parseInt(index) > 150) {
+  if (parseInt(index) > 1000) {
     return res.status(422).send("Indexul este prea mare");
   }
 

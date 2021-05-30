@@ -7,7 +7,7 @@ export default () => {
       <br></br>
           <br></br>
           <br></br>
-      Cealalta pagina!
+      Pagina 2!
       <Link to="/">Inapoi acasa</Link>
       <br></br>
           <br></br>
