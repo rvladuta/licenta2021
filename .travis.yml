@@ -11,9 +11,9 @@ before_install:
   - source $HOME/google-cloud-sdk/path.bash.inc
   - gcloud components update kubectl
   - gcloud auth activate-service-account --key-file service-account.json
-  - gcloud config set project licenta2021-315311
-  - gcloud config set compute/zone europe-central2-c
-  - gcloud container clusters get-credentials cluster-licenta
+  - gcloud config set project licenta2021-317923
+  - gcloud config set compute/zone europe-central2-a
+  - gcloud container clusters get-credentials cluster-licenta2021
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t rvladuta/react-test -f ./client/Dockerfile.dev ./client
 

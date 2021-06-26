@@ -9,11 +9,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Link to="/">Acasa</Link>
-          <Link to="/otherpage">Pagina 2</Link>
-        </header>
         <div>
           <Route exact path="/" component={Fib} />
           <Route path="/otherpage" component={OtherPage} />
