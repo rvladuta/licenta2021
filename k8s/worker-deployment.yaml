@@ -15,11 +15,11 @@ spec:
       containers:
         - name: worker
           image: rvladuta/worker
-          resources:
-            requests:
-              cpu: "250m"
           env:
             - name: REDIS_HOST
               value: redis-cluster-ip-service
             - name: REDIS_PORT
               value: '6379'
+          resources:
+            requests:
+              cpu: "250m"
